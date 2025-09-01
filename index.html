@@ -1,52 +1,113 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meio Ambiente - Página de Exemplo</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agosto Lilás</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="acessibilidade">
+    <button onclick="aumentarFonte()">A+</button>
+    <button onclick="diminuirFonte()">A-</button>
+    <button onclick="alternarContraste()">Alto Contraste</button>
+  </div>
 
-    <header>
-        <h1>Agosto Lilás</h1>
-        <h2>Mês de Conscientização e combate à violência contra a mulher</h2>
-    </header>
+  <header>
+    <h1>Agosto Lilás</h1>
+    <h2>Mês de conscientização e combate à violência contra a mulher</h2>
+  </header>
 
-    <!-- Imagem e legenda -->
-    <section class="intro">
-        <img src="agostolilás.png" alt="Imagem sobre o meio ambiente">
-        <p class="caption">A natureza é nosso maior bem. Vamos proteger nossos recursos naturais.</p>
+  <div class="container">
+    <section class="topicos">
+      <ul>
+        <li><a href="#titulo1">Origem e significado do Agosto Lilás</a></li>
+        <li><a href="#titulo2">Tipos de violência contra a mulher</a></li>
+        <li><a href="#titulo3">O papel da sociedade na prevenção</a></li>
+        <li><a href="#titulo4">Políticas públicas e redes de apoio</a></li>
+        <li><a href="#titulo5">Educação e conscientização no combate à violência</a></li>
+      </ul>
     </section>
 
-    <!-- Tópicos -->
-    <section class="title">
-        <h3>Tópico 1: Aquecimento Global</h3>
-        <p>O aquecimento global é uma preocupação crescente. Ele está relacionado ao aumento das temperaturas médias globais devido à emissão de gases de efeito estufa, como o dióxido de carbono. O que podemos fazer para mitigar seus efeitos?</p>
-
-        <h3>Tópico 2: Desmatamento</h3>
-        <p>O desmatamento está destruindo ecossistemas inteiros, colocando em risco várias espécies e afetando o equilíbrio climático. A perda de florestas também compromete a absorção de CO2. Quais soluções existem para combater esse problema?</p>
-
-        <h3>Tópico 3: Poluição dos Oceanos</h3>
-        <p>A poluição marinha afeta a vida marinha e a nossa saúde. A quantidade de plástico e outros resíduos nos oceanos é alarmante. Como podemos reduzir o desperdício de plásticos e proteger nossos mares?</p>
-
-        <h3>Tópico 4: Energia Renovável</h3>
-        <p>A energia renovável é uma alternativa crucial para reduzir emissões de gases poluentes. Fontes como solar, eólica e hidrelétrica oferecem uma maneira mais limpa e sustentável de gerar energia. Quais são as principais fontes e como podemos expandi-las?</p>
-
-        <h3>Tópico 5: Conservação da Biodiversidade</h3>
-        <p>A preservação da biodiversidade é essencial para o equilíbrio ecológico. Muitas espécies estão em risco devido à destruição de habitats naturais e à poluição. Como podemos proteger as espécies em extinção e manter o equilíbrio da natureza?</p>
+    <section class="imagem">
+      <img src="AL.jpg" alt="Campanha Agosto Lilás">
     </section>
 
-    <!-- Referências -->
-    <section class="references">
-        <h3>Referências</h3>
-        <ul>
-            <li><a href="https://www.worldwildlife.org" target="_blank">World Wildlife Fund (WWF) - Conservação Global</a></li>
-            <li><a href="https://www.greenpeace.org" target="_blank">Greenpeace - Campanhas de Meio Ambiente</a></li>
-            <li><a href="https://www.un.org/sustainabledevelopment/climate-change/" target="_blank">ONU - Ações para Combater o Aquecimento Global</a></li>
-            <li><a href="https://www.mma.gov.br/" target="_blank">Ministério do Meio Ambiente - Brasil</a></li>
-        </ul>
+    <section class="textos">
+      <div class="bloco-texto">
+        <h3 id="titulo1">Origem e significado do Agosto Lilás</h3>
+        <p>
+          O Agosto Lilás é uma campanha nacional de enfrentamento à violência contra a mulher, criada em 2016. A escolha do mês está diretamente ligada à sanção da Lei Maria da Penha (Lei nº 11.340/2006), ocorrida em 7 de agosto de 2006, um marco histórico na proteção dos direitos das mulheres no Brasil.
+          A cor lilás foi adotada por seu vínculo com os movimentos feministas e representa a luta pela igualdade de gênero. Durante o mês de agosto, instituições públicas e privadas promovem ações de conscientização, como palestras, rodas de conversa, iluminação de prédios públicos e divulgação de canais de denúncia, como o Ligue 180.
+          Segundo o Ministério das Mulheres, o Agosto Lilás é mais do que uma campanha: é uma mobilização nacional que busca sensibilizar a sociedade sobre a gravidade da violência doméstica e familiar, incentivando a denúncia e o acolhimento das vítimas.
+        </p>
+      </div>
+
+      <div class="bloco-texto">
+  <h3 id="titulo2">Tipos de violência contra a mulher</h3>
+  <p>
+    A violência contra a mulher é multifacetada e vai muito além da agressão física. A Lei Maria da Penha reconhece cinco tipos principais de violência doméstica:
+  </p>
+  <p><strong>Violência física:</strong> qualquer ação que cause dor ou lesão corporal, como socos, empurrões, chutes, queimaduras ou uso de objetos para ferir.</p>
+  <p><strong>Violência psicológica:</strong> comportamentos que causam dano emocional, como ameaças, humilhações, manipulação, isolamento social ou controle excessivo sobre a vida da mulher.</p>
+  <p><strong>Violência sexual:</strong> atos forçados sem consentimento, como estupro conjugal, coerção ou imposição de práticas sexuais indesejadas.</p>
+  <p><strong>Violência patrimonial:</strong> destruição, retenção ou controle de bens, documentos e recursos financeiros da mulher, impedindo sua autonomia econômica.</p>
+  <p><strong>Violência moral:</strong> ofensas verbais, calúnias, difamações e injúrias que ferem a honra e a reputação da vítima.</p>
+  <p>
+    De acordo com o JusBrasil, a violência doméstica é frequentemente praticada por pessoas próximas à vítima, como parceiros ou familiares. Por isso, é essencial que a sociedade esteja atenta aos sinais e saiba como agir diante de situações suspeitas.
+  </p>
+</div>
+
+      <div class="bloco-texto">
+        <h3 id="titulo3">O papel da sociedade na prevenção</h3>
+        <p>
+          A prevenção da violência contra a mulher é uma responsabilidade coletiva. A sociedade tem papel fundamental na construção de ambientes seguros, na promoção da igualdade e no combate à cultura do silêncio.
+          Segundo o Ministério das Mulheres, ações educativas e campanhas de conscientização são essenciais para mudar comportamentos e desconstruir estereótipos. Além disso, o apoio de familiares, amigos e vizinhos pode ser decisivo para que a vítima se sinta encorajada a buscar ajuda.
+          O Brasil Escola destaca que a violência doméstica não é um problema privado, mas uma questão social que exige envolvimento ativo de todos os cidadãos.
+        </p>
+      </div>
+
+      <div class="bloco-texto">
+        <h3 id="titulo4">Políticas públicas e redes de apoio</h3>
+        <p>
+          O enfrentamento à violência contra a mulher depende de políticas públicas eficazes e de uma rede de apoio bem estruturada. O Brasil conta com instrumentos como Delegacias Especializadas de Atendimento à Mulher (DEAMs), Centros de Referência da Mulher, Casas-abrigo e o Ligue 180.
+          De acordo com o Ministério das Mulheres, essas estruturas devem funcionar de forma integrada, garantindo atendimento humanizado, sigiloso e eficiente. A capacitação de profissionais e o investimento contínuo são fundamentais para que essas políticas sejam efetivas.
+          O JusBrasil reforça que a aplicação da Lei Maria da Penha depende da articulação entre os poderes públicos e da conscientização da sociedade sobre os direitos das mulheres.
+        </p>
+      </div>
+
+      <div class="bloco-texto">
+        <h3 id="titulo5">Educação e conscientização no combate à violência</h3>
+        <p>
+          A educação é uma das ferramentas mais poderosas na prevenção da violência de gênero. Desde a infância, é possível ensinar valores como respeito, empatia e igualdade. Escolas e universidades devem ser espaços de formação cidadã e combate ao machismo estrutural.
+          Campanhas como o Agosto Lilás ajudam a romper tabus e promover o diálogo sobre temas sensíveis. Já o Ministério das Mulheres destaca que a inclusão de conteúdos sobre direitos humanos e relações saudáveis nos currículos escolares é essencial para formar uma geração mais consciente.
+          A conscientização também passa pela capacitação de profissionais da saúde, segurança e assistência social, que lidam diretamente com vítimas. O JusBrasil aponta que o acolhimento adequado pode ser decisivo para que a mulher se sinta segura para denunciar.
+        </p>
+      </div>
     </section>
 
+    <footer class="referencias">
+      <h4>Referências</h4>
+      <ul>
+        <li><a href="https://brasilescola.uol.com.br/datas-comemorativas/agosto-lilas.htm" target="_blank">Brasil Escola – Agosto Lilás</a></li>
+        <li><a href="https://www.jusbrasil.com.br/artigos/agosto-lilas-combate-a-violencia-contra-mulher/4274809528" target="_blank">JusBrasil – Tipos de violência e Lei Maria da Penha</a></li>
+        <li><a href="https://www.gov.br/mulheres/pt-br/central-de-conteudos/noticias/agosto/agosto-lilas-mes-sera-marcado-por-acoes-de-mobilizacao-prevencao-e-fortalecimento-da-rede-de-protecao-as-mulheres" target="_blank">Ministério das Mulheres – Campanha Agosto Lilás</a></li>
+      </ul>
+    </footer>
+  </div>
+
+  <script>
+    function aumentarFonte() {
+      document.body.style.fontSize = '18px';
+    }
+
+    function diminuirFonte() {
+      document.body.style.fontSize = '14px';
+    }
+
+    function alternarContraste() {
+      document.body.classList.toggle('contraste');
+    }
+  </script>
 </body>
 </html>

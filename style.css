@@ -1,106 +1,211 @@
-/* Resetando alguns estilos padrão */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0e7ff;  /* Cor lilás clara de fundo */
-    color: #333;
-    padding: 20px;
-    text-align: center; /* Centralizando o conteúdo da página */
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #bf87cc;
+  color: #333;
+  font-size: 16px;
 }
 
-/* Estilo para o cabeçalho */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
 header {
-    margin-bottom: 40px;
+  background-color: #6a1b9a;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
 }
 
 h1 {
-    font-size: 3rem;
-    color: #6a4c9c; /* Cor lilás */
+  font-size: 2.5em;
+  margin-bottom: 10px;
 }
 
 h2 {
-    font-size: 1.8rem;
-    color: #8e6f9c; /* Cor lilás mais suave */
+  font-size: 1.4em;
+  font-weight: 400;
 }
 
-/* Estilo para a seção de imagem */
-.intro {
-    margin-bottom: 40px;
+.acessibilidade {
+  background-color: #eee;
+  padding: 10px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #ccc;
 }
 
-.intro img {
-    width: 100%;
-    max-width: 800px;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+.acessibilidade button {
+  margin: 0 5px;
+  padding: 8px 12px;
+  font-size: 1em;
+  cursor: pointer;
+  background-color: #6a1b9a;
+  color: white;
+  border: none;
+  border-radius: 4px;
 }
 
-.caption {
-    font-size: 1.2rem;
-    color: #8e6f9c;
-    margin-top: 10px;
+.acessibilidade button:hover {
+  background-color: #4a148c;
 }
 
-/* Estilo para os tópicos */
-.topics {
-    margin-bottom: 40px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+.topicos {
+  background-color: #eaeaea;
+  padding: 20px;
+  text-align: center;
 }
 
-h3 {
-    font-size: 1.8rem;
-    color: #6a4c9c; /* Cor lilás */
-    margin-top: 20px;
-    text-align: center;
+.topicos ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: inline-block;
+  text-align: left;
 }
 
-p {
-    font-size: 1.2rem;
-    color: #333;
-    line-height: 1.6;
-    margin-bottom: 20px;
-    text-align: center;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+.topicos li {
+  margin: 10px 0;
 }
 
-/* Estilo para a seção de Referências */
-.references {
-    background-color: #fff;
-    padding: 20px;
-    margin-top: 40px;
-    width: 80%;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
+.topicos a {
+  text-decoration: none;
+  color: #6a1b9a;
+  font-weight: bold;
 }
 
-.references h3 {
-    font-size: 1.5rem;
-    color: #6a4c9c;
-    margin-bottom: 20px;
+.topicos a:hover {
+  text-decoration: underline;
 }
 
-.references ul {
-    list-style-type: none;
-    line-height: 1.8;
+.imagem {
+  text-align: center;
+  padding: 20px;
 }
 
-.references a {
-    color: #6a4c9c; /* Cor lilás */
-    text-decoration: none;
+.imagem img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
 }
 
-.references a:hover {
-    text-decoration: underline;
+.textos {
+  background-color: #fff;
+  padding: 40px 20px;
+}
+
+.bloco-texto {
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.bloco-texto h3 {
+  color: #6a1b9a;
+  font-size: 1.6em;
+  margin-bottom: 10px;
+}
+
+.bloco-texto p {
+  line-height: 1.8;
+  font-size: 1em;
+}
+
+.referencias {
+  background-color: #f0f0f0;
+  padding: 30px 20px;
+  text-align: left;
+}
+
+.referencias h4 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #6a1b9a;
+}
+
+.referencias ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.referencias li {
+  margin-bottom: 8px;
+}
+
+.referencias a {
+  color: #333;
+  text-decoration: none;
+}
+
+.referencias a:hover {
+  text-decoration: underline;
+}
+
+/* Modo alto contraste */
+body.contraste {
+  background-color: #000;
+  color: #fff;
+}
+
+body.contraste header {
+  background-color: #000;
+  color: #ff0;
+}
+
+body.contraste .acessibilidade {
+  background-color: #222;
+  border-bottom: 1px solid #555;
+}
+
+body.contraste .acessibilidade button {
+  background-color: #444;
+  color: #ff0;
+}
+
+body.contraste .topicos {
+  background-color: #111;
+}
+
+body.contraste .textos {
+  background-color: #000;
+}
+
+body.contraste .referencias {
+  background-color: #111;
+}
+
+body.contraste a {
+  color: #ff0;
+}
+
+/* Responsividade básica */
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+  .bloco-texto h3 {
+    font-size: 1.3em;
+  }
+
+  .acessibilidade button {
+    font-size: 0.9em;
+    padding: 6px 10px;
+  }
 }
